@@ -16,7 +16,7 @@ public class CubePlayer : MonoBehaviour
 
 	private void Start()
 	{
-		currentTarget = Vector3.forward + Vector3.up * 0.5f;
+		currentTarget = Vector3.up * 0.5f;
 	}
 	private void OnCollisionEnter(Collision collision)
 	{
@@ -87,6 +87,9 @@ public class CubePlayer : MonoBehaviour
 
 
 		transform.position = newPos;
-		transform.rotation = Quaternion.LookRotation(moveDirection, Vector3.up);
+		if (moveDirection != Vector3.zero)
+		{
+			transform.rotation = Quaternion.LookRotation(moveDirection, Vector3.up);
+		}
 	}
 }
