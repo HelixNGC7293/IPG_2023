@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Create coins
         if(timer > timerTotal)
 		{
             timer = 0;
@@ -44,6 +45,7 @@ public class GameManager : MonoBehaviour
             timer += Time.deltaTime;
 		}
 
+        //Mouse click detection
         if (Input.GetMouseButtonUp(0))
         {
             Vector2 touchUpPos = Input.mousePosition;
@@ -55,6 +57,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
+        //Update UI
         text_Score.text = "<color=#000fff>Score: </color>" + score;
     }
 

@@ -795,12 +795,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1308755536}
+  - component: {fileID: 1308755537}
   - component: {fileID: 1308755535}
   - component: {fileID: 1308755534}
   - component: {fileID: 1308755533}
-  - component: {fileID: 1308755537}
   - component: {fileID: 1308755538}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -900,6 +900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6089585aa7ab0bb4d895785f5c9afa2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movingPatterns: 1
   gameManager: {fileID: 1312018904}
 --- !u!54 &1308755538
 Rigidbody:
