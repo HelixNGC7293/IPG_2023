@@ -80,7 +80,7 @@ public class CubePlayer : MonoBehaviour
 		else if (movingPatterns == MovingPatterns.EaseInAndOut)
 		{
 			//Extra: Using easing algorithm from https://easings.net/
-			movementTimer = Mathf.Min(1, movementTimer + Time.deltaTime);
+			movementTimer = Mathf.Min(1, movementTimer + Time.deltaTime * 0.5f);
 			newPos = startPos + (currentTarget - startPos) * -(Mathf.Cos(Mathf.PI * movementTimer) - 1) / 2;
 		}
 
