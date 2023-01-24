@@ -26,6 +26,13 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        for(int i = 0; i< 1000; i++)
+		{
+            timer = 0;
+            GameObject coin = Instantiate(coinPrefab);
+            Vector3 v3 = new Vector3(Random.Range(-10f, 10f), Random.Range(1f, 3f), Random.Range(-10f, 10f));
+            coin.transform.position = v3;
+        }
     }
 
 
