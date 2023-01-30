@@ -34,9 +34,9 @@ public class CardManager : MonoBehaviour
 	public CardController currentSelectedCard;
 
 
-	public int drawCardNum = 5;
-	public int currentEnergy;
-	public int defaultEnergy = 23;
+	int drawCardNum = 5;
+	int currentEnergy = -1;
+	int defaultEnergy = 23;
 
 
 
@@ -135,10 +135,7 @@ public class CardManager : MonoBehaviour
 				float middleIndex = (cards_Hand.Count - 1) * 0.5f;
 
 				int selectedCardIndex = 0;
-				if (selectedCard != null)
-				{
-					selectedCardIndex = cards_Hand.IndexOf(selectedCard);
-				}
+				if (selectedCard != null) selectedCardIndex = cards_Hand.IndexOf(selectedCard);
 
 				for (int i = 0; i < cards_Hand.Count; i++)
 				{
@@ -172,9 +169,9 @@ public class CardManager : MonoBehaviour
 		//cards_DrawPile = cards;
 		isDrawingCards = true;
 
-		currentEnergy = defaultEnergy;
 
-		text_Message.text = "";
+		text_Message.text = currentEnergy == -1 ? "~ Welcome ~" : "Next Round Starts !";
+		currentEnergy = defaultEnergy;
 		text_Energy.text = currentEnergy.ToString();
 	}
 	

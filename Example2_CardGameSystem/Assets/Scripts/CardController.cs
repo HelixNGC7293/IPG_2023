@@ -68,11 +68,6 @@ public class CardController : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 			rectTrans.localRotation = Quaternion.Euler(Vector3.zero);
 		}
 	}
-	
-	void AllowSelect()
-	{
-		allowSelect = true;
-	}
 
 	public void OnPointerEnter(PointerEventData eventData)
 	{
@@ -86,10 +81,10 @@ public class CardController : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
 	public void OnPointerExit(PointerEventData eventData)
 	{
-			mouseRollOver = false;
-			rectTrans.localScale = Vector3.one;
+		mouseRollOver = false;
+		rectTrans.localScale = Vector3.one;
 
-			cardManager.RelocateAllCards();
+		cardManager.RelocateAllCards();
 	}
 
 
@@ -100,7 +95,6 @@ public class CardController : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 			if (!isDragging)
 			{
 				isDragging = true;
-
 				cardManager.currentSelectedCard = this;
 			}
 		}
@@ -121,7 +115,6 @@ public class CardController : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 			}
 		}
 	}
-	
 
 	public void OnEndDrag(PointerEventData eventData)
 	{
@@ -147,5 +140,10 @@ public class CardController : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 				cardManager.currentSelectedCard = null;
 			}
 		}
+	}
+
+	void AllowSelect()
+	{
+		allowSelect = true;
 	}
 }
