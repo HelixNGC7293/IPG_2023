@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public enum GameStatus { Start, Ready, End };
 public class CardManager : MonoBehaviour
@@ -9,6 +10,11 @@ public class CardManager : MonoBehaviour
 
 	[SerializeField]
 	CardController cardPrefab;
+	[SerializeField]
+	TextMeshProUGUI text_Message;
+	[SerializeField]
+	TextMeshProUGUI text_Energy;
+
 	CardDatabase cardDatabase;
 
 	RectTransform cardGroup;
@@ -29,6 +35,8 @@ public class CardManager : MonoBehaviour
 
 
 	public int drawCardNum = 5;
+	public int currentEnergy;
+	public int defaultEnergy = 23;
 
 
 
@@ -53,8 +61,15 @@ public class CardManager : MonoBehaviour
 		{
 			if (cardDrawingTimer > cardDrawingTimerTotal)
 			{
-
-				CardProperty cardProperty = cards_DrawPile[cardDrawingIndex];
+				if(cards_DrawPile.Count == 0)
+				{
+					//Refill cards from discard pile
+					foreach (CardProperty cP in cards_DiscardPile)
+					{
+						cards_DrawPile.Add(cP);
+					}
+				}
+				CardProperty cardProperty = cards_DrawPile[Random.Range(0, cards_DrawPile.Count)];
 				CardController card;
 
 				//Generate Player card
@@ -68,8 +83,11 @@ public class CardManager : MonoBehaviour
 
 				card.Init(cardProperty);
 				card.cardManager = this;
+
 				//Add the controller to cards_Hand
 				cards_Hand.Add(card);
+				cards_DrawPile.Remove(cardProperty);
+
 				//Relocation
 				RelocateAllCards();
 
@@ -145,7 +163,6 @@ public class CardManager : MonoBehaviour
 		}
 	}
 
-
 	public void RoundStart()
 	{
 		gameStatus = GameStatus.Start;
@@ -154,28 +171,34 @@ public class CardManager : MonoBehaviour
 		cardDrawingIndex = 0;
 		//cards_DrawPile = cards;
 		isDrawingCards = true;
+
+		currentEnergy = defaultEnergy;
+
+		text_Message.text = "";
+		text_Energy.text = currentEnergy.ToString();
 	}
 	
 	public void RoundEnd()
 	{
-		gameStatus = GameStatus.End;
-		int drawCardNum = 5;
-		if (cards_Hand.Count > 0)
+		if (gameStatus == GameStatus.Ready)
 		{
-			//Discard all the hand cards
-			foreach (CardController cardController in cards_Hand)
+			gameStatus = GameStatus.End;
+			if (cards_Hand.Count > 0)
 			{
+				//Discard all the hand cards
+				foreach (CardController cardController in cards_Hand)
+				{
 
-				cards_DiscardPile.Add(cardController.cardProperty);
+					cards_DiscardPile.Add(cardController.cardProperty);
+				}
 			}
-			drawCardNum = Mathf.Max(0, drawCardNum);
-		}
 
-		RelocateAllCards();
-		Invoke("RemoveAllcards_Hand", 0.39f);
+			RelocateAllCards();
+			Invoke("CleanHandsAndStartNextRound", 0.6f);
+		}
 	}
 
-	void RemoveAllcards_Hand()
+	void CleanHandsAndStartNextRound()
 	{
 		//Round end of special card ability
 		foreach(CardController cardController in cards_Hand)
@@ -183,28 +206,43 @@ public class CardManager : MonoBehaviour
 			Destroy(cardController.gameObject);
 		}
 		cards_Hand.Clear();
+
+		//Next Round
+		RoundStart();
 	}
 
 	//Return if card is used
 	public bool TakingEffectCheck()
 	{
+		if (currentSelectedCard != null)
+		{
+			CardProperty cardProperty = currentSelectedCard.cardProperty;
+			//For special card, destroyed after use
+			if (currentSelectedCard.rectTrans.anchoredPosition.y > 300 && currentEnergy >= currentSelectedCard.cardProperty.cost)
+			{
+				//Normal card, drag to the center of screen
+
+				//Apply card ability
+				currentEnergy -= currentSelectedCard.cardProperty.cost;
+				//This card is used
+				//Add this card to the discard pile
+				MoveCardToDiscardPile(currentSelectedCard);
+
+				text_Message.text = "You just used \"" + currentSelectedCard.cardProperty.name + "\" Card";
+				text_Energy.text = currentEnergy.ToString();
+
+
+				return true;
+			}
+		}
 		return false;
 	}
 
-	//Return if the card should be destroyed
-	bool ApplyCardAbilities(CardProperty cardProperty)
+	void MoveCardToDiscardPile(CardController cardController)
 	{
-		//Standard CardType
-		//cardProperty.name
-		return false;
-	}
-
-	void MoveCardToDiscardPile(CardController cardController, int ownerID = 1)
-	{
-		CardProperty cardProperty = cardController.cardProperty;
+		cards_DiscardPile.Add(cardController.cardProperty);
 		cards_Hand.Remove(cardController);
 		Destroy(cardController.gameObject);
-		//cardDB.MoveCardToDiscardPile(cardProperty, ownerID);
 
 		RelocateAllCards();
 	}
