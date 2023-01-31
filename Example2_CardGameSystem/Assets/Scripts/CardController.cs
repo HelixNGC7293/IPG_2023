@@ -51,6 +51,7 @@ public class CardController : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 	void Start () {
 		//Wait until 1 sec after, start dragging
 		rectTrans = GetComponent<RectTransform>();
+		rectTrans.localScale = Vector3.one;
 		Invoke("AllowSelect", 1);
 	}
 
