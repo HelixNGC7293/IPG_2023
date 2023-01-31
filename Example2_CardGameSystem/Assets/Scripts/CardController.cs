@@ -45,7 +45,7 @@ public class CardController : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 	bool allowSelect = false;
 	bool isDragging = false;
 
-
+	[HideInInspector]
 	public CardProperty cardProperty;
 
 	void Start () {
