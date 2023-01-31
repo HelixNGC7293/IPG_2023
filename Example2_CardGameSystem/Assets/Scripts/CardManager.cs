@@ -33,8 +33,14 @@ public class CardManager : MonoBehaviour
 	[HideInInspector]
 	public CardController currentSelectedCard;
 
+	//Getter/Setter with "value"
 
-	int drawCardNum = 5;
+	private int _drawCardNum = 0;
+	public int DrawCardNum {
+		get { return _drawCardNum; } 
+		set { _drawCardNum = Mathf.Max(1, value); Debug.Log("Player's Draw Card Num is set to " + value); }
+	}
+
 	int currentEnergy = -1;
 	int defaultEnergy = 23;
 
@@ -50,6 +56,8 @@ public class CardManager : MonoBehaviour
 		{
 			cards_DrawPile.Add(cP);
 		}
+
+		DrawCardNum = 5;
 
 		RoundStart();
 	}
@@ -93,7 +101,7 @@ public class CardManager : MonoBehaviour
 
 
 				cardDrawingIndex++;
-				if(cardDrawingIndex >= drawCardNum)
+				if(cardDrawingIndex >= DrawCardNum)
 				{
 					gameStatus = GameStatus.Ready;
 					//Finished drawing cards
@@ -112,7 +120,7 @@ public class CardManager : MonoBehaviour
 		if (cards_Hand.Count > 0)
 		{
 			//Player cards
-			if (CardManager.gameStatus == GameStatus.End)
+			if (gameStatus == GameStatus.End)
 			{
 				for (int i = 0; i < cards_Hand.Count; i++)
 				{
@@ -130,27 +138,29 @@ public class CardManager : MonoBehaviour
 			{
 				//Calculate interval
 				float cardInterval = (Screen.width - 700) / (cards_Hand.Count - 1);
-				//Between 50-150
+				//Between 30-150
 				cardInterval = Mathf.Clamp(cardInterval, 30, 150);
 				float middleIndex = (cards_Hand.Count - 1) * 0.5f;
 
+				//Get current selected card's index
 				int selectedCardIndex = 0;
 				if (selectedCard != null) selectedCardIndex = cards_Hand.IndexOf(selectedCard);
 
 				for (int i = 0; i < cards_Hand.Count; i++)
 				{
 					CardController cardController = cards_Hand[i];
+					//Get card anchor position
 					Vector2 targetPosition = new Vector2((i - middleIndex) * cardInterval, Mathf.Abs(middleIndex - i) * cardInterval * -0.2f);
 					if (selectedCard != null)
 					{
 						//Move away from selected card
 						if (i < selectedCardIndex)
 						{
-							targetPosition.x -= 12000 / cardInterval;
+							targetPosition.x -= 20000 / cardInterval;
 						}
 						else if (i > selectedCardIndex)
 						{
-							targetPosition.x += 18000 / cardInterval;
+							targetPosition.x += 20000 / cardInterval;
 						}
 					}
 					cardController.targetPosition = targetPosition;
@@ -160,6 +170,7 @@ public class CardManager : MonoBehaviour
 		}
 	}
 
+	//Start Round
 	public void RoundStart()
 	{
 		gameStatus = GameStatus.Start;
@@ -175,6 +186,7 @@ public class CardManager : MonoBehaviour
 		text_Energy.text = currentEnergy.ToString();
 	}
 	
+	//End Round
 	public void RoundEnd()
 	{
 		if (gameStatus == GameStatus.Ready)
@@ -208,7 +220,7 @@ public class CardManager : MonoBehaviour
 		RoundStart();
 	}
 
-	//Return if card is used
+	//Applying card effect
 	public bool TakingEffectCheck()
 	{
 		if (currentSelectedCard != null)
@@ -218,9 +230,30 @@ public class CardManager : MonoBehaviour
 			if (currentSelectedCard.rectTrans.anchoredPosition.y > 300 && currentEnergy >= currentSelectedCard.cardProperty.cost)
 			{
 				//Normal card, drag to the center of screen
-
-				//Apply card ability
 				currentEnergy -= currentSelectedCard.cardProperty.cost;
+				//Apply card ability
+				switch (cardProperty.name)
+				{
+					case "Minotaur":
+						print("Applying Special Ability 1");
+						break;
+					case "Dark Protector":
+						print("Applying Special Ability 2");
+						break;
+					case "The Prophecy":
+						print("Applying Special Ability 3");
+						break;
+					case "Space Tunnel":
+						print("Applying Special Ability 4");
+						break;
+					case "Space Secret Army":
+						print("Applying Special Ability 5");
+						break;
+					default:
+						print("Applying Normal Card");
+						break;
+				}
+
 				//This card is used
 				//Add this card to the discard pile
 				MoveCardToDiscardPile(currentSelectedCard);

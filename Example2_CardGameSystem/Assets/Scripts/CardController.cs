@@ -7,47 +7,56 @@ using TMPro;
 
 public class CardController : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IDragHandler, IEndDragHandler, IBeginDragHandler
 {
-
+	//Card UIs
 	[SerializeField]
 	Image cardArt;
 	[SerializeField]
 	TextMeshProUGUI text_CardName;
 	[SerializeField]
 	TextMeshProUGUI text_Cost;
-	[SerializeField]
-	Vector3 hoveredScale = new Vector3(2, 2, 2);
-	[SerializeField]
-	float hoveredHeight = 200;
-	[SerializeField]
-	Vector3 selectedScale = new Vector3(0.2f, 0.2f, 0.2f);
-
-
-	bool mouseRollOver = false;
-	bool allowSelect = false;
-	bool isDragging = false;
-	// Use this for initialization
-
-	[HideInInspector]
-	public CardManager cardManager;
-	[HideInInspector]
-	public Vector2 targetPosition = Vector2.zero;
-	[HideInInspector]
-	public Quaternion targetRotation = new Quaternion();
-	//For TakingEffectCheck of cardManager
 	[HideInInspector]
 	public RectTransform rectTrans;
 
-	public float lerpSpeed = 3;
+	//Card Manager
+	[HideInInspector]
+	public CardManager cardManager;
+
+	//Hovering and Selecting Scale / Position changes
+	[SerializeField]
+	Vector3 hoveringScale = new Vector3(2, 2, 2);
+	//When mouse hovering over, change of card y
+	[SerializeField]
+	float hoveringY = 200;
+	//Scale during dragging
+	[SerializeField]
+	Vector3 selectedScale = new Vector3(1.2f, 1.2f, 1.2f);
+	//Card moving speed
+	[SerializeField]
+	float lerpSpeed = 3;
+	//Anchor point for card position
+	[HideInInspector]
+	public Vector2 targetPosition = Vector2.zero;
+	//Anchor rotation
+	[HideInInspector]
+	public Quaternion targetRotation = new Quaternion();
+
+	//Card Status
+	bool mouseRollOver = false;
+	bool allowSelect = false;
+	bool isDragging = false;
+
 
 	public CardProperty cardProperty;
 
 	void Start () {
+		//Wait until 1 sec after, start dragging
 		rectTrans = GetComponent<RectTransform>();
 		Invoke("AllowSelect", 1);
 	}
 
 	public void Init(CardProperty cP)
 	{
+		//Setup card UIs
 		cardProperty = cP;
 		cardArt.sprite = cP.art;
 		text_CardName.text = cP.name;
@@ -58,17 +67,20 @@ public class CardController : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 	{
 		if ((!mouseRollOver && !isDragging) || (!allowSelect && mouseRollOver) || CardManager.gameStatus != GameStatus.Ready)
 		{
+			//Nothing happens || Card moving back but mouse roll over || Not in player phase
 			rectTrans.anchoredPosition = Vector2.Lerp(rectTrans.anchoredPosition, targetPosition, Time.deltaTime * lerpSpeed);
 			rectTrans.rotation = Quaternion.Slerp(rectTrans.rotation, rectTrans.parent.rotation * targetRotation, Time.deltaTime * lerpSpeed);
 		}
 		else if (allowSelect && mouseRollOver && !isDragging)
 		{
-			rectTrans.localScale = hoveredScale;
-			rectTrans.anchoredPosition = new Vector2(targetPosition.x, hoveredHeight);
+			//Mouse Roll Over
+			rectTrans.localScale = hoveringScale;
+			rectTrans.anchoredPosition = new Vector2(targetPosition.x, hoveringY);
 			rectTrans.localRotation = Quaternion.Euler(Vector3.zero);
 		}
 	}
 
+	//Mouse Roll Over 
 	public void OnPointerEnter(PointerEventData eventData)
 	{
 		if (cardManager.currentSelectedCard == null)
@@ -87,7 +99,7 @@ public class CardController : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 		cardManager.RelocateAllCards();
 	}
 
-
+	//Drag Detection
 	public void OnBeginDrag(PointerEventData eventData)
 	{
 		if (allowSelect && eventData.button == PointerEventData.InputButton.Left)
@@ -142,6 +154,7 @@ public class CardController : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 		}
 	}
 
+	//Waiting for the cards movement stop
 	void AllowSelect()
 	{
 		allowSelect = true;
