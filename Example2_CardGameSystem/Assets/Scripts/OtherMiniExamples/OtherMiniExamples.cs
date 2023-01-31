@@ -105,10 +105,18 @@ public class OtherMiniExamples : MonoBehaviour
 
         Debug.Log("Bubble Sort result is: \n");
 
-        foreach (int sortNum in sortNumbers)
-        {
-            Debug.Log(sortNum);
-        }
+		foreach (int sortNum in sortNumbers)
+		{
+			Debug.Log(sortNum);
+		}
+
+        //***Example H
+        int score = 90;
+        string message = (score >= 90) ? "Excellent!" : "Try harder.";
+        Debug.Log(message);
+
+        
+
     }
 
 
