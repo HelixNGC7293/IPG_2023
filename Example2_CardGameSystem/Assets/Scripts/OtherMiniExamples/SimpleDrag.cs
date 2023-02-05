@@ -44,6 +44,9 @@ public class SimpleDrag : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDr
 				{
 					rectTrans.position = globalMousePos;
 				}
+
+				//Another way: control anchoredPosition Vector2 to make it follow the mouse
+				//rectTrans.anchoredPosition = eventData.position - new Vector2(Screen.width / 2, Screen.height / 2);
 			}
 		}
 	}

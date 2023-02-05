@@ -125,6 +125,8 @@ public class CardController : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 				{
 					rectTrans.position = globalMousePos;
 				}
+				//Another way: control anchoredPosition Vector2 to make it follow the mouse (Not recommended)
+				//rectTrans.anchoredPosition = eventData.position - new Vector2(Screen.width / 2, 0);
 			}
 		}
 	}
