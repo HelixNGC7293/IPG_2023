@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
 
 
             GateController gate = Instantiate(gate_Prefab);
-            gate.transform.position = new Vector3(0, 0, 25);
+            gate.Position = new Vector3(0, 0, 25);
         }
         else
 		{
@@ -102,7 +102,7 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < increasedNum; i++)
 		{
             PlayerUnit unit = Instantiate(playerUnit_Prefab, playerGroup);
-            unit.transform.position = playerTarget.position + new Vector3(Random.value, Random.value, Random.value);
+            unit.Position = playerTarget.position + new Vector3(Random.value, Random.value, Random.value);
             playerUnitList.Add(unit);
         }
 	}

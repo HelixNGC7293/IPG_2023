@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class GateController : MonoBehaviour
+public class GateController : MonoBehaviour, IMover
 {
     [SerializeField]
     float gateSpeed = -10;
@@ -12,6 +12,17 @@ public class GateController : MonoBehaviour
 
     bool isGateTriggered = false;
 
+    public Vector3 Position
+    {
+        get
+        {
+            return transform.position;
+        }
+        set
+        {
+            transform.position = value;
+        }
+    }
 
     GameManager.Ability[] gateAbility;
 
@@ -31,12 +42,21 @@ public class GateController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.forward * gateSpeed * Time.deltaTime);
-
-        if(transform.position.z < -20)
+        Move();
+        if (transform.position.z < -20)
 		{
-            Destroy(gameObject);
-		}
+            Remove();
+        }
+    }
+
+    public void Move()
+    {
+        transform.Translate(Vector3.forward * gateSpeed * Time.deltaTime);
+    }
+
+    public void Remove()
+    {
+        Destroy(gameObject);
     }
 
     public void GateTriggered(int gateID)
