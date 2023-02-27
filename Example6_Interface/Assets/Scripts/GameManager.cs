@@ -125,9 +125,12 @@ public class GameManager : MonoBehaviour
             // -
             int decreasedNum = CalculateDecreasedPlayerNum(PlayerNum - ability.abilityPower);
 
-            for (int i = 0; i < decreasedNum; i++)
+            if (playerUnitList.Count > 0)
             {
-                RemoveUnit(playerUnitList[Random.Range(0, playerUnitList.Count)]);
+                for (int i = 0; i < decreasedNum; i++)
+                {
+                    RemoveUnit(playerUnitList[Random.Range(0, playerUnitList.Count)]);
+                }
             }
         }
         else if (ability.abilityID == 2)
@@ -140,10 +143,12 @@ public class GameManager : MonoBehaviour
             // ÷
             int decreasedNum = CalculateDecreasedPlayerNum(Mathf.RoundToInt((float)PlayerNum / ability.abilityPower));
 
-
-            for (int i = 0; i < decreasedNum; i++)
+            if (playerUnitList.Count > 0)
             {
-                RemoveUnit(playerUnitList[Random.Range(0, playerUnitList.Count)]);
+                for (int i = 0; i < decreasedNum; i++)
+                {
+                    RemoveUnit(playerUnitList[Random.Range(0, playerUnitList.Count)]);
+                }
             }
         }
     }
