@@ -165,7 +165,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            decreasedNum = Mathf.Max(0, PlayerNum - formulaResult);
+            decreasedNum = Mathf.Min(PlayerNum, PlayerNum - formulaResult);
         }
 
         //Change PlayerNum
