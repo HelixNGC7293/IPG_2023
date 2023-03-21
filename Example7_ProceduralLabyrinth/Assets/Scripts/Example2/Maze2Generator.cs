@@ -90,7 +90,7 @@ public class Maze2Generator : MonoBehaviour
         return neighborUnvisitedCells;
     }
 
-    void RecursiveBacktracking(Maze2Cell startCell)
+    void RecursiveRandomPrim(Maze2Cell startCell)
     {
         unvisitCells.Remove(startCell);
         if (!startCell.isVisited)
@@ -98,8 +98,7 @@ public class Maze2Generator : MonoBehaviour
             startCell.isVisited = true;
             startCell.wall.SetActive(false);
 
-
-            //Relink from main path
+            //Instant relink from main path
             if (startCell.tunnelDirection == Maze2TunnelDirectionIndicator.Right)
             {
                 mazeCellMap[startCell.locX - 1, startCell.locY].wall.SetActive(false);
@@ -145,29 +144,22 @@ public class Maze2Generator : MonoBehaviour
                 {
                     mazeCellMap[startCell.locX, startCell.locY + 1].wall.SetActive(false);
                 }
+
+                //Remove visited endCell from unvisited cell list
                 neighborUnvisitedCells.Remove(endCell);
-                //Push current selected cell into the stack, move the pointer to the next nearby cell
+
+                //Get all unvisited cells around startCell & endCell
                 unvisitCells.AddRange(neighborUnvisitedCells);
-
-
                 unvisitCells.AddRange(CheckCellSurroundings(endCell));
 
             }
         }
         if (unvisitCells.Count > 0)
         {
-            //As long as there is cell in the stack
-            //Pop up the last one
-            //Roll back to last cell along the path
-            RecursiveBacktracking(unvisitCells[Random.Range(0, unvisitCells.Count)]);
+            //As long as there is cell in the list
+            //Randomly choose one cell and continue
+            RecursiveRandomPrim(unvisitCells[Random.Range(0, unvisitCells.Count)]);
         }
-
-    }
-
-
-    // Update is called once per frame
-    void Update()
-    {
 
     }
 }

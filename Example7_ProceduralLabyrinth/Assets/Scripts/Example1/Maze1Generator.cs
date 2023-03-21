@@ -118,11 +118,4 @@ public class Maze1Generator : MonoBehaviour
         }
 
     }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
