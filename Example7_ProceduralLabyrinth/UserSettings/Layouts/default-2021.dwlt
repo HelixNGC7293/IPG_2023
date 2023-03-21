@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1357.3334
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Scene
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 61
+  controlID: 28
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 62
+  controlID: 29
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 63
+  controlID: 30
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -325,14 +325,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\My Unity Alien\Example7_ProceduralLabyrinth
+  m_LastProjectPath: D:\My Unity Alien\IPG_2023\Example7_ProceduralLabyrinth
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 045a0000
-    m_LastClickedID: 23044
-    m_ExpandedIDs: 00000000ee590000f0590000f259000000ca9a3bffffff7f
+    m_SelectedIDs: ae5a0000
+    m_LastClickedID: 23214
+    m_ExpandedIDs: 000000009c5a00009e5a0000a05a0000b05a000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -360,7 +360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ee590000f0590000f2590000f4590000
+    m_ExpandedIDs: 000000009c5a00009e5a0000a05a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -488,9 +488,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f4620000
-      m_LastClickedID: 25332
-      m_ExpandedIDs: 3ed5ebff10d6ebffa8d6ebff6205edff6405edffc8abedff203ef1ff8654f8ffa0e9f8ffa06df9ffb272f9ffc872f9ff8691fdffec9bfdffbe69feff8c05ffff34a7ffff02faffff32fbffff4c5a0000fe5a0000
+      m_SelectedIDs: 825b0000
+      m_LastClickedID: 23426
+      m_ExpandedIDs: a2a6ffff42f9ffff0efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -772,9 +772,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 7.339537, y: 12.555474, z: -3.0485084}
+    m_Target: {x: 2.221273, y: 17.774185, z: 5.7795467}
     speed: 2
-    m_Value: {x: 7.339537, y: 12.555474, z: -3.0485084}
+    m_Value: {x: 2.221273, y: 17.774185, z: 5.7795467}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -821,9 +821,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.05050695, y: -0.4727166, z: 0.027024372, w: -0.87941253}
+    m_Target: {x: -0.1202526, y: -0.38495377, z: 0.050548967, w: -0.91373086}
     speed: 2
-    m_Value: {x: -0.05182313, y: -0.47264984, z: 0.02773203, w: -0.879288}
+    m_Value: {x: -0.12024604, y: -0.38493276, z: 0.050546207, w: -0.913681}
   m_Size:
     m_Target: 14.660871
     speed: 2

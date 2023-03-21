@@ -43,7 +43,7 @@ public class Maze2Generator : MonoBehaviour
 
         Maze2Cell startCell = mazeCellMap[1, 1];
         unvisitCells.Add(startCell);
-        RecursiveBacktracking(startCell);
+        RecursiveRandomPrim(startCell);
     }
 
     List<Maze2Cell> CheckCellSurroundings(Maze2Cell cell)
