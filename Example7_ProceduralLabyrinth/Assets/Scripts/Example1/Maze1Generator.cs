@@ -116,6 +116,10 @@ public class Maze1Generator : MonoBehaviour
             Maze1Cell nextSelectedCell = pathFindingCells.Pop();
             RecursiveBacktracking(nextSelectedCell);
         }
+        else
+        {
+            Debug.Log("Generation Done");
+        }
 
     }
 }

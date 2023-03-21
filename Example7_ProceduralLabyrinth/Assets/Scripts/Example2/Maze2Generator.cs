@@ -46,50 +46,6 @@ public class Maze2Generator : MonoBehaviour
         RecursiveRandomPrim(startCell);
     }
 
-    List<Maze2Cell> CheckCellSurroundings(Maze2Cell cell)
-    {
-        List<Maze2Cell> neighborUnvisitedCells = new List<Maze2Cell>();
-
-        if (cell.locX - 2 > 0)
-        {
-            Maze2Cell checkingNeighborCell = mazeCellMap[cell.locX - 2, cell.locY];
-            if (!checkingNeighborCell.isVisited)
-            {
-                neighborUnvisitedCells.Add(checkingNeighborCell);
-                checkingNeighborCell.tunnelDirection = Maze2TunnelDirectionIndicator.Left;
-            }
-        }
-        if (cell.locX + 2 < mazeX - 1)
-        {
-            Maze2Cell checkingNeighborCell = mazeCellMap[cell.locX + 2, cell.locY];
-            if (!checkingNeighborCell.isVisited)
-            {
-                neighborUnvisitedCells.Add(checkingNeighborCell);
-                checkingNeighborCell.tunnelDirection = Maze2TunnelDirectionIndicator.Right;
-            }
-        }
-        if (cell.locY - 2 > 0)
-        {
-            Maze2Cell checkingNeighborCell = mazeCellMap[cell.locX, cell.locY - 2];
-            if (!checkingNeighborCell.isVisited)
-            {
-                neighborUnvisitedCells.Add(checkingNeighborCell);
-                checkingNeighborCell.tunnelDirection = Maze2TunnelDirectionIndicator.Up;
-            }
-        }
-        if (cell.locY + 2 < mazeY - 1)
-        {
-            Maze2Cell checkingNeighborCell = mazeCellMap[cell.locX, cell.locY + 2];
-            if (!checkingNeighborCell.isVisited)
-            {
-                neighborUnvisitedCells.Add(checkingNeighborCell);
-                checkingNeighborCell.tunnelDirection = Maze2TunnelDirectionIndicator.Down;
-            }
-        }
-
-        return neighborUnvisitedCells;
-    }
-
     void RecursiveRandomPrim(Maze2Cell startCell)
     {
         unvisitCells.Remove(startCell);
@@ -160,6 +116,58 @@ public class Maze2Generator : MonoBehaviour
             //Randomly choose one cell and continue
             RecursiveRandomPrim(unvisitCells[Random.Range(0, unvisitCells.Count)]);
         }
+        else
+        {
+            Debug.Log("Generation Done");
+            //Adjust difficulty
+            //for (int i = 0; i < 1000; i++)
+            //{
+            //    Maze2Cell cell = mazeCellMap[Random.Range(1, mazeCellMap.GetLength(0) - 1), Random.Range(1, mazeCellMap.GetLength(1) - 1)];
+            //    cell.wall.SetActive(false);
+            //}
+        }
+    }
+    List<Maze2Cell> CheckCellSurroundings(Maze2Cell cell)
+    {
+        List<Maze2Cell> neighborUnvisitedCells = new List<Maze2Cell>();
 
+        if (cell.locX - 2 > 0)
+        {
+            Maze2Cell checkingNeighborCell = mazeCellMap[cell.locX - 2, cell.locY];
+            if (!checkingNeighborCell.isVisited)
+            {
+                neighborUnvisitedCells.Add(checkingNeighborCell);
+                checkingNeighborCell.tunnelDirection = Maze2TunnelDirectionIndicator.Left;
+            }
+        }
+        if (cell.locX + 2 < mazeX - 1)
+        {
+            Maze2Cell checkingNeighborCell = mazeCellMap[cell.locX + 2, cell.locY];
+            if (!checkingNeighborCell.isVisited)
+            {
+                neighborUnvisitedCells.Add(checkingNeighborCell);
+                checkingNeighborCell.tunnelDirection = Maze2TunnelDirectionIndicator.Right;
+            }
+        }
+        if (cell.locY - 2 > 0)
+        {
+            Maze2Cell checkingNeighborCell = mazeCellMap[cell.locX, cell.locY - 2];
+            if (!checkingNeighborCell.isVisited)
+            {
+                neighborUnvisitedCells.Add(checkingNeighborCell);
+                checkingNeighborCell.tunnelDirection = Maze2TunnelDirectionIndicator.Up;
+            }
+        }
+        if (cell.locY + 2 < mazeY - 1)
+        {
+            Maze2Cell checkingNeighborCell = mazeCellMap[cell.locX, cell.locY + 2];
+            if (!checkingNeighborCell.isVisited)
+            {
+                neighborUnvisitedCells.Add(checkingNeighborCell);
+                checkingNeighborCell.tunnelDirection = Maze2TunnelDirectionIndicator.Down;
+            }
+        }
+
+        return neighborUnvisitedCells;
     }
 }
