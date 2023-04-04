@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f72ba34eb9abe04b819651ba74e3864, type: 3}
   m_Name: GameSettings
   m_EditorClassIdentifier: 
-  selectedIndex: -1
+  gameTimer: 17.54638
+  selectedIndex: 1
