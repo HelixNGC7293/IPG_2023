@@ -102,9 +102,9 @@ public class GridManager : MonoBehaviour
 
         if (distX > distY)
         {
-            return 10 * distY + 10 * (distX - distY);
+            return distX;
         }
-        return 10 * distX + 10 * (distY - distX);
+        return distY;
     }
     private List<GridUnit> GetNeighbors(GridUnit gridUnit)
     {
@@ -209,7 +209,7 @@ public class GridManager : MonoBehaviour
                     continue;
                 }
                 // Calculate the new G cost
-                int newGCost = currentNode.GCost + GetDistance(currentNode.GridUnit, neighbor);
+                int newGCost = currentNode.GCost + GetDistance(currentNode.GridUnit, neighbor) * GetCost(neighbor.tileType);
                 AStarNode neighborNode;
                 if (!nodeLookup.ContainsKey(neighbor))
                 {
