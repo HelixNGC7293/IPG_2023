@@ -1,0 +1,1863 @@
+fileFormatVersion: 2
+guid: 99d08998c7b0c504cb5d148e90a618eb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: _Character1 Gun0000
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3705
+        width: 427
+        height: 391
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1f8c7e05ffb8f920800000000000000
+      internalID: 3024378209010224922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0001
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 3704
+        width: 427
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90ac478f9e0646ca0800000000000000
+      internalID: -6024583843502831095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0002
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 3702
+        width: 427
+        height: 394
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43aad0b331b08a460800000000000000
+      internalID: 7253059377103219252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0003
+      rect:
+        serializedVersion: 2
+        x: 1371
+        y: 3702
+        width: 427
+        height: 394
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51113b0450bc1aee0800000000000000
+      internalID: -1251495998011535083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0004
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 3700
+        width: 427
+        height: 396
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e725056c43f571f00800000000000000
+      internalID: 1087442515303355006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0005
+      rect:
+        serializedVersion: 2
+        x: 2285
+        y: 3699
+        width: 427
+        height: 397
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d6c987e1862f31b0800000000000000
+      internalID: -5674774666086332719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0006
+      rect:
+        serializedVersion: 2
+        x: 2742
+        y: 3697
+        width: 427
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3833b93fab872d200800000000000000
+      internalID: 203357677531378563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0007
+      rect:
+        serializedVersion: 2
+        x: 3199
+        y: 3697
+        width: 427
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c052b709cb99aa9a0800000000000000
+      internalID: -6220990900102028020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0008
+      rect:
+        serializedVersion: 2
+        x: 3656
+        y: 3695
+        width: 427
+        height: 401
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1da6c4ddcc87329c0800000000000000
+      internalID: -3953183226619729199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0009
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3263
+        width: 427
+        height: 402
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53e124b2c5127ea10800000000000000
+      internalID: 1938554844352749109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0010
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 3261
+        width: 427
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 978a2eeb8c98f97f0800000000000000
+      internalID: -603612329755367303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0011
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 3260
+        width: 427
+        height: 405
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8dca3354ed106fc0800000000000000
+      internalID: -3503767643608134258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0012
+      rect:
+        serializedVersion: 2
+        x: 1371
+        y: 3259
+        width: 427
+        height: 406
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 548a9d12bcb439400800000000000000
+      internalID: 329690533546534981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0013
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 3258
+        width: 427
+        height: 407
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95648b4f586f9fba0800000000000000
+      internalID: -6054537168826120615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0014
+      rect:
+        serializedVersion: 2
+        x: 2285
+        y: 3256
+        width: 427
+        height: 409
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c66e831a614053320800000000000000
+      internalID: 2536938460333794924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0015
+      rect:
+        serializedVersion: 2
+        x: 2742
+        y: 3257
+        width: 427
+        height: 408
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80679b6a9a2896fb0800000000000000
+      internalID: -4654045074752440824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0016
+      rect:
+        serializedVersion: 2
+        x: 3199
+        y: 3259
+        width: 427
+        height: 406
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c01f50cd086e88c30800000000000000
+      internalID: 4361989680229904652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0017
+      rect:
+        serializedVersion: 2
+        x: 3656
+        y: 3259
+        width: 427
+        height: 406
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2dd8d42a3b1b5e60800000000000000
+      internalID: 7951979503592987949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0018
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2822
+        width: 427
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dffa66a27e7a5ab90800000000000000
+      internalID: -7231189015382806531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0019
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 2823
+        width: 427
+        height: 403
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 381e59e82abbe18b0800000000000000
+      internalID: -5179496214578208381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0020
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 2824
+        width: 427
+        height: 402
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d50330db45ff727c0800000000000000
+      internalID: -4096024596656738211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0021
+      rect:
+        serializedVersion: 2
+        x: 1371
+        y: 2826
+        width: 427
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0aa0ded57a174bd0800000000000000
+      internalID: -2646117162505164273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0022
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 2827
+        width: 427
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 907864aafc9233890800000000000000
+      internalID: -7479588584240543991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0023
+      rect:
+        serializedVersion: 2
+        x: 2285
+        y: 2828
+        width: 427
+        height: 398
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27da9d3ef7d0431e0800000000000000
+      internalID: -2219133873452110478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0024
+      rect:
+        serializedVersion: 2
+        x: 2742
+        y: 2829
+        width: 427
+        height: 397
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29cdad3a584c14f30800000000000000
+      internalID: 4558140376134376594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0025
+      rect:
+        serializedVersion: 2
+        x: 3199
+        y: 2830
+        width: 427
+        height: 396
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5353b6d3c6c54d70800000000000000
+      internalID: 9026839572557026142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0026
+      rect:
+        serializedVersion: 2
+        x: 3656
+        y: 2832
+        width: 427
+        height: 394
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d88c107c4e86ff320800000000000000
+      internalID: 2593907242189310093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0027
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2398
+        width: 427
+        height: 394
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 356c0104a01550510800000000000000
+      internalID: 1514705954146403923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0028
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 2400
+        width: 427
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 580feaaa7eb5aced0800000000000000
+      internalID: -2392999201434832763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0029
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3705
+        width: 427
+        height: 391
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21bd09a491aadbf40800000000000000
+      internalID: 5745935725196532498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0030
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 2387
+        width: 372
+        height: 405
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5320faf93fe722640800000000000000
+      internalID: 5053741316684317237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0031
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 2382
+        width: 368
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a39523a8a2193cb0800000000000000
+      internalID: -4883851805405637721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0032
+      rect:
+        serializedVersion: 2
+        x: 1714
+        y: 2386
+        width: 360
+        height: 406
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8d8ef367d042f090800000000000000
+      internalID: -8002262294044177010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0033
+      rect:
+        serializedVersion: 2
+        x: 2104
+        y: 2396
+        width: 349
+        height: 396
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1685b5afd83d7d650800000000000000
+      internalID: 6257702813998733409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0034
+      rect:
+        serializedVersion: 2
+        x: 2483
+        y: 2386
+        width: 360
+        height: 406
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 236ac065928adc540800000000000000
+      internalID: 5029861254333507122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0035
+      rect:
+        serializedVersion: 2
+        x: 2873
+        y: 2382
+        width: 368
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e38244c08f2a62f0800000000000000
+      internalID: -978917738904648730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0036
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 2387
+        width: 372
+        height: 405
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b474a6fd1a80b7830800000000000000
+      internalID: 4069856179590416203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0037
+      rect:
+        serializedVersion: 2
+        x: 3271
+        y: 2389
+        width: 375
+        height: 403
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d19b844da265812a0800000000000000
+      internalID: -6766563698174019299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0038
+      rect:
+        serializedVersion: 2
+        x: 3676
+        y: 2393
+        width: 369
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 403b9c064b24601e0800000000000000
+      internalID: -2232023222830124284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0039
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1956
+        width: 353
+        height: 396
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87d52046ffaed4460800000000000000
+      internalID: 7227691359614950776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0040
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 1953
+        width: 369
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ff833c5d71d2da70800000000000000
+      internalID: 8850366554084446195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0041
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 1949
+        width: 375
+        height: 403
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a9cee435f1b30630800000000000000
+      internalID: 3892150169691408808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0042
+      rect:
+        serializedVersion: 2
+        x: 2104
+        y: 2396
+        width: 349
+        height: 396
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37cb1d3ce5809fde0800000000000000
+      internalID: -1298997814414427021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0043
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 1956
+        width: 390
+        height: 396
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbbb62b316283f270800000000000000
+      internalID: 8283107493780306877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0044
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 1956
+        width: 393
+        height: 396
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a0b2538a69d31cb0800000000000000
+      internalID: -4894329318528601950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0045
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 1939
+        width: 374
+        height: 413
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cea7ee12b7629bcb0800000000000000
+      internalID: -4847801213595518228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0046
+      rect:
+        serializedVersion: 2
+        x: 2434
+        y: 1930
+        width: 249
+        height: 422
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c16fdd691a53b43b0800000000000000
+      internalID: -5527265149530016228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0047
+      rect:
+        serializedVersion: 2
+        x: 2713
+        y: 1958
+        width: 269
+        height: 394
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95c9b02d7660e73d0800000000000000
+      internalID: -3207118841665840039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0048
+      rect:
+        serializedVersion: 2
+        x: 3012
+        y: 1977
+        width: 303
+        height: 375
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb3c912f3e35e7d80800000000000000
+      internalID: -8251065228811713601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0049
+      rect:
+        serializedVersion: 2
+        x: 3345
+        y: 1995
+        width: 331
+        height: 357
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b152cf366a802750800000000000000
+      internalID: 6278170052315468212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0050
+      rect:
+        serializedVersion: 2
+        x: 3706
+        y: 1981
+        width: 310
+        height: 371
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ecd7cfe04bf55d30800000000000000
+      internalID: 4419714865653341408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0051
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1517
+        width: 286
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0b2f5d33660d57f0800000000000000
+      internalID: -622334150206084339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0052
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 1497
+        width: 259
+        height: 403
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8215b6867b88e48b0800000000000000
+      internalID: -5166041401235123928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0053
+      rect:
+        serializedVersion: 2
+        x: 2434
+        y: 1930
+        width: 249
+        height: 422
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e696e2e3b62675b80800000000000000
+      internalID: -8406141966719489682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0054
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 1487
+        width: 338
+        height: 413
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 564aefdbe02aa7b70800000000000000
+      internalID: 8897602198024660069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0055
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 1491
+        width: 335
+        height: 409
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e9cac4596e3c4f50800000000000000
+      internalID: 6866932153948228064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0056
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 1496
+        width: 334
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 607a3512443c80ba0800000000000000
+      internalID: -6122428996025866490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0057
+      rect:
+        serializedVersion: 2
+        x: 1702
+        y: 1501
+        width: 334
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 474a8003879fc8550800000000000000
+      internalID: 6164576284560630900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0058
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 1506
+        width: 334
+        height: 394
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e52e6760e879a64f0800000000000000
+      internalID: -834688144674200994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0059
+      rect:
+        serializedVersion: 2
+        x: 2430
+        y: 1512
+        width: 332
+        height: 388
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7fdb18491451efa0800000000000000
+      internalID: -5773240779751563398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0060
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 1510
+        width: 332
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad4da1a7824b366a0800000000000000
+      internalID: -6457119354778888998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0061
+      rect:
+        serializedVersion: 2
+        x: 3154
+        y: 1507
+        width: 332
+        height: 393
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5036d177f60008750800000000000000
+      internalID: 6305039957058478853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0062
+      rect:
+        serializedVersion: 2
+        x: 3516
+        y: 1503
+        width: 332
+        height: 397
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ee7db2d8764b7d0800000000000000
+      internalID: -2903582003723506070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0063
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1058
+        width: 332
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46760f5175f66e2f0800000000000000
+      internalID: -943944652066625692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0064
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1055
+        width: 332
+        height: 402
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e2d35c11bc373730800000000000000
+      internalID: 3978715527187256032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0065
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1061
+        width: 336
+        height: 396
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ca05ef7cbedbdda0800000000000000
+      internalID: -5918892384067450170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0066
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 1074
+        width: 345
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8b002ab159550a00800000000000000
+      internalID: 722081522812717967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0067
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 1095
+        width: 356
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f38ea6d0068e7a410800000000000000
+      internalID: 1488413701108852799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0068
+      rect:
+        serializedVersion: 2
+        x: 1851
+        y: 1150
+        width: 368
+        height: 307
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d68a6ece21b37a5f0800000000000000
+      internalID: -745562260836538259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0069
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 1160
+        width: 389
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5007020abfc3fb940800000000000000
+      internalID: 5314033136741412869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0070
+      rect:
+        serializedVersion: 2
+        x: 2668
+        y: 1169
+        width: 394
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c37b0c4b8a2c3bd0800000000000000
+      internalID: -2649195703036054592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0071
+      rect:
+        serializedVersion: 2
+        x: 3092
+        y: 1178
+        width: 400
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b155d2d49a3926060800000000000000
+      internalID: 6945275930712298779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0072
+      rect:
+        serializedVersion: 2
+        x: 3522
+        y: 1187
+        width: 406
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c7cce5c9f9a3be30800000000000000
+      internalID: 4518141741415319491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0073
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 751
+        width: 400
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6170d3cbc0f01800800000000000000
+      internalID: 581229109885038958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0074
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 747
+        width: 396
+        height: 278
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de6ff440b54a64860800000000000000
+      internalID: 7513873739135579885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0075
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 744
+        width: 390
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50a0ef169f14624a0800000000000000
+      internalID: -6618530063027664379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0076
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 802
+        width: 334
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a10d771bf24d09ea0800000000000000
+      internalID: -5867957013157785574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Character1 Gun0077
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 859
+        width: 167
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31c9907f163962850800000000000000
+      internalID: 6351926373418376211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      _Character1 Gun0018: -7231189015382806531
+      _Character1 Gun0068: -745562260836538259
+      _Character1 Gun0036: 4069856179590416203
+      _Character1 Gun0043: 8283107493780306877
+      _Character1 Gun0002: 7253059377103219252
+      _Character1 Gun0063: -943944652066625692
+      _Character1 Gun0007: -6220990900102028020
+      _Character1 Gun0005: -5674774666086332719
+      _Character1 Gun0017: 7951979503592987949
+      _Character1 Gun0067: 1488413701108852799
+      _Character1 Gun0037: -6766563698174019299
+      _Character1 Gun0047: -3207118841665840039
+      _Character1 Gun0026: 2593907242189310093
+      _Character1 Gun0046: -5527265149530016228
+      _Character1 Gun0071: 6945275930712298779
+      _Character1 Gun0016: 4361989680229904652
+      _Character1 Gun0020: -4096024596656738211
+      _Character1 Gun0031: -4883851805405637721
+      _Character1 Gun0065: -5918892384067450170
+      _Character1 Gun0015: -4654045074752440824
+      _Character1 Gun0069: 5314033136741412869
+      _Character1 Gun0013: -6054537168826120615
+      _Character1 Gun0035: -978917738904648730
+      _Character1 Gun0041: 3892150169691408808
+      _Character1 Gun0045: -4847801213595518228
+      _Character1 Gun0057: 6164576284560630900
+      _Character1 Gun0033: 6257702813998733409
+      _Character1 Gun0001: -6024583843502831095
+      _Character1 Gun0010: -603612329755367303
+      _Character1 Gun0034: 5029861254333507122
+      _Character1 Gun0008: -3953183226619729199
+      _Character1 Gun0003: -1251495998011535083
+      _Character1 Gun0004: 1087442515303355006
+      _Character1 Gun0028: -2392999201434832763
+      _Character1 Gun0051: -622334150206084339
+      _Character1 Gun0049: 6278170052315468212
+      _Character1 Gun0073: 581229109885038958
+      _Character1 Gun0014: 2536938460333794924
+      _Character1 Gun0032: -8002262294044177010
+      _Character1 Gun0061: 6305039957058478853
+      _Character1 Gun0012: 329690533546534981
+      _Character1 Gun0075: -6618530063027664379
+      _Character1 Gun0042: -1298997814414427021
+      _Character1 Gun0066: 722081522812717967
+      _Character1 Gun0024: 4558140376134376594
+      _Character1 Gun0029: 5745935725196532498
+      _Character1 Gun0060: -6457119354778888998
+      _Character1 Gun0072: 4518141741415319491
+      _Character1 Gun0009: 1938554844352749109
+      _Character1 Gun0077: 6351926373418376211
+      _Character1 Gun0040: 8850366554084446195
+      _Character1 Gun0000: 3024378209010224922
+      _Character1 Gun0064: 3978715527187256032
+      _Character1 Gun0076: -5867957013157785574
+      _Character1 Gun0062: -2903582003723506070
+      _Character1 Gun0019: -5179496214578208381
+      _Character1 Gun0055: 6866932153948228064
+      _Character1 Gun0025: 9026839572557026142
+      _Character1 Gun0027: 1514705954146403923
+      _Character1 Gun0070: -2649195703036054592
+      _Character1 Gun0056: -6122428996025866490
+      _Character1 Gun0023: -2219133873452110478
+      _Character1 Gun0048: -8251065228811713601
+      _Character1 Gun0011: -3503767643608134258
+      _Character1 Gun0022: -7479588584240543991
+      _Character1 Gun0030: 5053741316684317237
+      _Character1 Gun0074: 7513873739135579885
+      _Character1 Gun0059: -5773240779751563398
+      _Character1 Gun0050: 4419714865653341408
+      _Character1 Gun0021: -2646117162505164273
+      _Character1 Gun0044: -4894329318528601950
+      _Character1 Gun0039: 7227691359614950776
+      _Character1 Gun0006: 203357677531378563
+      _Character1 Gun0052: -5166041401235123928
+      _Character1 Gun0038: -2232023222830124284
+      _Character1 Gun0053: -8406141966719489682
+      _Character1 Gun0054: 8897602198024660069
+      _Character1 Gun0058: -834688144674200994
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
