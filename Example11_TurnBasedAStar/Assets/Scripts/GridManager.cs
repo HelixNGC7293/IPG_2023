@@ -134,7 +134,9 @@ public class GridManager : MonoBehaviour
     public List<GridUnit> CalculateReachableGrids(GridUnit startLocation, int actionPoint)
     {
         List<GridUnit> reachableGrids = new List<GridUnit>();
+        //First in first out
         Queue<(GridUnit, int)> queue = new Queue<(GridUnit, int)>();
+        //HashSet is a simple collection without orders
         HashSet<GridUnit> visited = new HashSet<GridUnit>();
 
         queue.Enqueue((startLocation, 0));
@@ -167,7 +169,8 @@ public class GridManager : MonoBehaviour
     }
 
     public void CalculatePathfinding(GridUnit startLocation, GridUnit targetLocation, int actionPoint)
-    {
+    { 
+        // Create the open list containing the start node and closed set
         List<AStarNode> openList = new List<AStarNode>();
         HashSet<GridUnit> closedSet = new HashSet<GridUnit>();
         Dictionary<GridUnit, AStarNode> nodeLookup = new Dictionary<GridUnit, AStarNode>();
@@ -175,9 +178,10 @@ public class GridManager : MonoBehaviour
         AStarNode startNode = new AStarNode { GridUnit = startLocation };
         openList.Add(startNode);
         nodeLookup[startLocation] = startNode;
-
+        // Main loop, continues until there are no more nodes to explore
         while (openList.Count > 0)
         {
+            // Find the node with the lowest F cost
             AStarNode currentNode = openList[0];
 
             for (int i = 1; i < openList.Count; i++)
@@ -187,23 +191,24 @@ public class GridManager : MonoBehaviour
                     currentNode = openList[i];
                 }
             }
-
+            // Remove the current node from the open list and add it to the closed set
             openList.Remove(currentNode);
             closedSet.Add(currentNode.GridUnit);
-
+            // Check if the current node is the target location, if so, retrace the path
             if (currentNode.GridUnit == targetLocation)
             {
                 RetracePath(startNode, currentNode, actionPoint);
                 return;
             }
-
+            // Explore neighbors of the current node
             foreach (GridUnit neighbor in GetNeighbors(currentNode.GridUnit))
-            {
+            { 
+                // Ignore blocked nodes or nodes already in the closed set
                 if (neighbor.tileType == 2 || closedSet.Contains(neighbor))
                 {
                     continue;
                 }
-
+                // Calculate the new G cost
                 int newGCost = currentNode.GCost + GetDistance(currentNode.GridUnit, neighbor);
                 AStarNode neighborNode;
                 if (!nodeLookup.ContainsKey(neighbor))
@@ -215,13 +220,13 @@ public class GridManager : MonoBehaviour
                 {
                     neighborNode = nodeLookup[neighbor];
                 }
-
+                // Update neighbor's G, H, and Parent if the new G cost is lower, or if the neighbor is not in the open list
                 if (newGCost < neighborNode.GCost || !openList.Contains(neighborNode))
                 {
                     neighborNode.GCost = newGCost;
                     neighborNode.HCost = GetDistance(neighbor, targetLocation);
                     neighborNode.Parent = currentNode;
-
+                    // Add neighbor to the open list if it's not already there
                     if (!openList.Contains(neighborNode))
                     {
                         openList.Add(neighborNode);
@@ -252,32 +257,33 @@ public class GridManager : MonoBehaviour
 
     private void RetracePath(AStarNode startNode, AStarNode endNode, int actionPoint)
     {
+        // Create an empty list to store the path
         List<GridUnit> path = new List<GridUnit>();
         AStarNode currentNode = endNode;
-
+        // Follow parent pointers from the end node to the start node, adding each node to the path
         while (currentNode != startNode)
         {
             path.Add(currentNode.GridUnit);
             currentNode = currentNode.Parent;
         }
-
+        // Reverse the path so it starts from the starting location
         path.Reverse();
-
+        // Hide the pathfinding visualization for all grid units
         foreach (GridUnit gridUnit in gridUnitList)
         {
             gridUnit.HidePathfinding();
         }
-
+        // Display the path and calculate its cost
         int pathCost = 0;
         foreach (GridUnit gridUnit in path)
         {
             pathCost += GetCost(gridUnit.tileType);
-
+            // If the path cost exceeds the action points available, stop displaying the path
             if (pathCost > actionPoint)
             {
                 break;
             }
-
+            // Update the current available move target and display the pathfinding visualization with the path cost
             currentAvailableMoveTarget = gridUnit;
             gridUnit.DisplayPathfinding(pathCost.ToString());
         }
