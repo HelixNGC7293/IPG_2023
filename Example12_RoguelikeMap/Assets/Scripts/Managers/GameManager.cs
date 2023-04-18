@@ -353,8 +353,8 @@ public class GameManager : MonoBehaviour
 			{
 				gameTimer -= Time.deltaTime;
 			}
-			//gameTimerBarFill.localScale = new Vector3(Mathf.Min(gameTimer / gameTimer_Init, 1), 1, 1);
-			//gameTimerText.text = "Self Destruction: \n<c=tak><w>" + Mathf.RoundToInt(gameTimer) + "s";
+			gameTimerBarFill.localScale = new Vector3(Mathf.Min(gameTimer / gameTimer_Init, 1), 1, 1);
+			gameTimerText.text = "Self Destruction: " + Mathf.RoundToInt(gameTimer) + "s";
 		}
 	}
 
