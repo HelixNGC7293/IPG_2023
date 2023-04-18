@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/WinState.unity
     guid: f5116b8673f6084439b69c548c0ebd27
+  - enabled: 1
+    path: Assets/_Scenes/GameOverState.unity
+    guid: 7ac7b169d64e4224788e504c0f6b1e76
   m_configObjects: {}

@@ -787,8 +787,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bf05d742266cb74792508235c4ee161, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 2606585}
-  player: {fileID: 1541667403}
   anim_PickUpItem: {fileID: 1038180821}
   image_PickUpItem: {fileID: 2015289052}
   sp_PickUpItem:

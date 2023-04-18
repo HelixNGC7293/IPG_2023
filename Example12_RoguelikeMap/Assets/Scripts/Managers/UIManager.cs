@@ -8,10 +8,6 @@ using TMPro;
 public class UIManager : MonoBehaviour
 {
 	public static UIManager instance;
-	[SerializeField]
-	GameManager gameManager;
-	[SerializeField]
-	Player player;
 
 	[SerializeField]
 	Animator anim_PickUpItem;
@@ -50,13 +46,13 @@ public class UIManager : MonoBehaviour
 		image_PickUpItem.sprite = sp_PickUpItem[itemID];
 		anim_PickUpItem.SetTrigger("Play");
 
-		gameManager.itemCollected++;
+		GameManager.instance.itemCollected++;
 		DisplayRelicNum();
 	}
 
 	void DisplayRelicNum()
 	{
-		tX_RelicContent.text = gameManager.itemCollected + "/" + gameManager.itemMaximumNum;
+		tX_RelicContent.text = GameManager.instance.itemCollected + "/" + GameManager.instance.itemMaximumNum;
 	}
 
 	public void DisplayPassword(string password)
@@ -73,16 +69,5 @@ public class UIManager : MonoBehaviour
 		tX_PasswordContent.color = color_Password[0];
 		tX_PasswordContent.fontSize = 12f;
 		tX_PasswordContent.text = "Password";
-	}
-	public void Escape()
-	{
-		if((float)gameManager.itemCollected / gameManager.itemMaximumNum >= 0.8f)
-		{
-			gameManager.GameOver(GameEnding.Humanity);
-		}
-		else
-		{
-			gameManager.GameOver(GameEnding.DirectEscape);
-		}
 	}
 }

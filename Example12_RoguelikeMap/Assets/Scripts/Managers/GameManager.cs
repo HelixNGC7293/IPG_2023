@@ -4,9 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public enum GameEnding { DirectEscape, Explosion, Humanity }
+public enum GameEnding { DirectEscape, TimesUp, Win }
 public class GameManager : MonoBehaviour
 {
+	public static GameManager instance;
 	[HideInInspector]
 	public bool isGameOver = false;
 
@@ -58,6 +59,13 @@ public class GameManager : MonoBehaviour
 
 	string[] passwordTemplate = { "BLOOM", "ENJOY", "UNITY", "GLORY", "HELLO", "HONOR", "HUMOR", "INNER", "LUCKY", "VVVVV", "LIGHT", "LOGIC", "MERCY", "TOUCH", "TRUTH", "FORCE", "VIGOR", "EIGHT", "ETHER", "FUZZY", "CURLY", "ONION", "CLOVE", "PUPPY", "FRUIT", "CHUNK", "BEEFY" };
 
+	private void Awake()
+	{
+		if(instance == null)
+		{
+			instance = this;
+		}
+	}
 	// Use this for initialization
 	void Start ()
 	{
@@ -347,7 +355,7 @@ public class GameManager : MonoBehaviour
 			{
 				//Exploded
 				gameTimer = 0;
-				GameOver(GameEnding.Explosion);
+				GameOver(GameEnding.TimesUp);
 			}
 			else
 			{
@@ -358,19 +366,32 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
+	public void Escape()
+	{
+		if ((float)itemCollected / itemMaximumNum >= 0.5f)
+		{
+			GameOver(GameEnding.Win);
+		}
+		else
+		{
+			GameOver(GameEnding.DirectEscape);
+		}
+	}
 
 	public void GameOver(GameEnding gameEnding)
 	{
 		if (!isGameOver)
 		{
-			string nextScene = "WinState";
-
 			isGameOver = true;
+
+			string nextScene = "GameOverState";
+			if (gameEnding == GameEnding.Win)
+			{
+				nextScene = "WinState";
+			}
 
 			//Play death animation
 			SceneManager.LoadScene(nextScene);
 		}
 	}
-
-
 }

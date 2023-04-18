@@ -103,7 +103,7 @@ public class Player : MonoBehaviour
         }
         else if (other.CompareTag("Exit"))
 		{
-            UIManager.instance.Escape();
+            GameManager.instance.Escape();
         }
     }
 
